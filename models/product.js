@@ -9,5 +9,3 @@ const productSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model("product", productSchema);
-
-// Every product will have name, price, color, description and ID of category from categories collection.
