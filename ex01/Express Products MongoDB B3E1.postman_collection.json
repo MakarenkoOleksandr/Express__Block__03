@@ -1,0 +1,444 @@
+{
+	"info": {
+		"_postman_id": "4f530fc2-814e-484f-bd24-a33ec0610f29",
+		"name": "Express Products MongoDB B3E1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "category",
+							"value": "hats",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4040/category/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"category",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "category",
+							"value": "hats",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4040/category/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"category",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "new_category",
+							"value": "vests",
+							"type": "text"
+						},
+						{
+							"key": "old_category",
+							"value": "hats",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4040/category/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"category",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Display all categories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "old_category",
+							"value": "hats",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "new_category",
+							"value": "vests",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4040/category/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"category",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Display all categories and products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "old_category",
+							"value": "hats",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "new_category",
+							"value": "vests",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4040/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Display a single category and it's products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "old_category",
+							"value": "hats",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "new_category",
+							"value": "vests",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4040/category/hats",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"category",
+						"hats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "category",
+							"value": "hats",
+							"type": "text"
+						},
+						{
+							"key": "product[name]",
+							"value": "Baseball hat",
+							"type": "text"
+						},
+						{
+							"key": "product[price]",
+							"value": "50",
+							"type": "text"
+						},
+						{
+							"key": "product[color]",
+							"value": "black",
+							"type": "text"
+						},
+						{
+							"key": "product[description]",
+							"value": "best hat in town",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "banana",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": "10",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "color",
+							"value": "yellow",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "good one",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4040/product/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"product",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "category",
+							"value": "hats",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "product[name]",
+							"value": "cowboy hat",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "product[price]",
+							"value": "50",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "product[color]",
+							"value": "black",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "product[description]",
+							"value": "best hat in town",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "pants",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4040/product/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"product",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "old_product[name]",
+							"value": "cowboy hat",
+							"type": "text"
+						},
+						{
+							"key": "new_product[name]",
+							"value": "astronaut hat",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4040/product/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"product",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Display a single product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "old_category",
+							"value": "hats",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "new_category",
+							"value": "vests",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4040/product/cowboy%20hat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"product",
+						"cowboy%20hat"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
